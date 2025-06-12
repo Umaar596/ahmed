@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmed Traders & Steel Store</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(90deg, #002b5b, #00509e);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      background: #004080;
+      margin: 0;
+      padding: 0.5rem;
+    }
+    nav ul li {
+      margin: 0 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      margin-top: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      color: #003366;
+      display: flex;
+      align-items: center;
+      font-size: 1.8rem;
+    }
+    section h2 i {
+      margin-right: 10px;
+      color: #00509e;
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background: #00509e;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      background: #002b5b;
+      color: white;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ahmed Traders & Steel Store</h1>
+    <p>Your trusted partner for construction and sanitary materials</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#cement">Cement</a></li>
+      <li><a href="#steel">Steel</a></li>
+      <li><a href="#tilebond">Tile Bonds</a></li>
+      <li><a href="#sanitary">Sanitary</a></li>
+      <li><a href="#electrical">Electrical</a></li>
+      <li><a href="#fans">Fans</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="cement">
+    <h2><i class="fas fa-industry"></i> Cement</h2>
+    <p>High-quality brands like DG, Lucky, and Bestway. Perfect for strong foundations, pillars, and concrete structures in any scale construction.</p>
+  </section>
+
+  <section id="steel">
+    <h2><i class="fas fa-dumbbell"></i> Steel Bars</h2>
+    <p>We provide Ittefaq, FF, Mughal steel bars. Widely used in structural frameworks including beams, columns, and slabs.</p>
+  </section>
+
+  <section id="tilebond">
+    <h2><i class="fas fa-border-all"></i> Tile Bonds</h2>
+    <p>Strong adhesives like BOND and Sika for perfect tile placement on walls and floors in kitchens, bathrooms, and outdoor areas.</p>
+  </section>
+
+  <section id="sanitary">
+    <h2><i class="fas fa-toilet"></i> Sanitary Ware</h2>
+    <p>Premium fittings and accessories from Porta, Faisal, and Velly. Ideal for bathrooms, kitchens, and water connections.</p>
+  </section>
+
+  <section id="electrical">
+    <h2><i class="fas fa-plug"></i> Electrical Items</h2>
+    <p>Top-quality wires, cables, switches, and panels. Suitable for home, office, and industrial wiring and safety solutions.</p>
+  </section>
+
+  <section id="fans">
+    <h2><i class="fas fa-fan"></i> Ceiling & Exhaust Fans</h2>
+    <p>Powerful air flow solutions by Royal, Pak Fan, and GFC. Available for rooms, kitchens, offices, and commercial areas.</p>
+  </section>
+
+  <section id="contact">
+    <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+    <form action="https://formsubmit.co/ahmadtraders03@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p><strong>Email:</strong> ahmadtraders03@gmail.com</p>
+    <p><strong>Phone:</strong> 0300 8609063, 0300 4249141</p>
+    <p><strong>Address:</strong> 23Km Ada Mohlanwal, Multan Road, Lahore</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ahmed Traders & Steel Store | Developed with ❤️ by Ahmed</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('nav ul li a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const section = document.querySelector(this.getAttribute('href'));
+        if (section) {
+          window.scrollTo({
+            top: section.offsetTop - 60,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
